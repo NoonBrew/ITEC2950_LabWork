@@ -1,0 +1,4 @@
+Class Work involved version control so the clone repo would conflict with git structure
+of this folder so it is in another location at the indicated path.
+
+Path: C:\Users\Nate O\Desktop\gitClassWork_week3
