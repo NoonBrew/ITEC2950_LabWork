@@ -37,11 +37,14 @@ def extract_answer_from_response(response):
     This function returns the answer value from the nested dictionary.
     """
 
-    # TODO what would happen if the response dictionary was not in the expected form?
-    # TODO can you modify this function to print an error message, and return None
-    #   if the response dictionary is not in this structure? 
-    answer = response['magic']['answer']
-    return answer
+
+    #TODO Think about how to handle non dictionary structures and test for proper error handling
+    try:
+        answer = response['magic']['answer']
+        return answer
+    except KeyError:
+        return None
+    
 
 
 if __name__ == '__main__':
