@@ -1,0 +1,18 @@
+2022-10-03 11:41:45,743 - root - INFO - Magic 8-Ball Program Launched
+2022-10-03 11:41:53,892 - root - INFO - User has entered valid question "Are apples fruit"
+2022-10-03 11:41:53,892 - root - INFO - About to make request to Magic 8 ball API at url https://8ball.delegator.com/magic/JSON/Are apples fruit
+2022-10-03 11:41:53,897 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 8ball.delegator.com:443
+2022-10-03 11:41:54,253 - urllib3.connectionpool - DEBUG - https://8ball.delegator.com:443 "GET /magic/JSON/Are%20apples%20fruit HTTP/1.1" 200 None
+2022-10-03 11:41:54,255 - root - DEBUG - response received from API <Response [200]>
+2022-10-03 11:41:54,256 - root - DEBUG - Decoded JSON response {'magic': {'question': 'Are apples fruit', 'answer': 'Cannot predict now', 'type': 'Neutral'}}
+2022-10-03 11:41:54,256 - root - DEBUG - Returning "Cannot predict now"" from API
+2022-10-03 11:41:54,256 - root - INFO - Answer recieved from magic 8-ball Cannot predict now
+2022-10-03 11:43:45,489 - root - INFO - Magic 8-Ball Program Launched
+2022-10-03 11:43:55,380 - root - INFO - User has entered valid question "Are Apples Fruit?"
+2022-10-03 11:43:55,380 - root - INFO - About to make request to Magic 8 ball API at url https://8ball.delegator.com/magic/JSON/Are Apples Fruit?
+2022-10-03 11:43:55,383 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): 8ball.delegator.com:443
+2022-10-03 11:43:55,629 - urllib3.connectionpool - DEBUG - https://8ball.delegator.com:443 "GET /magic/JSON/Are%20Apples%20Fruit HTTP/1.1" 200 None
+2022-10-03 11:43:55,631 - root - DEBUG - response received from API <Response [200]>
+2022-10-03 11:43:55,631 - root - DEBUG - Decoded JSON response {'magic': {'question': 'Are Apples Fruit', 'answer': 'My sources say no', 'type': 'Contrary'}}
+2022-10-03 11:43:55,631 - root - DEBUG - Returning "My sources say no"" from API
+2022-10-03 11:43:55,631 - root - INFO - Answer recieved from magic 8-ball My sources say no
