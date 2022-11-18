@@ -8,12 +8,14 @@
         <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
     </head>
 
-    <h1>Where do you want to go?</h1>
-
     <body>
+    <h1 id="site-header">Where do you want to go?</h1>
+
+    
         {% block content %}
         {% endblock %}
-    </body>
+        
+    <hr>
 
     <div>
         <p>A travel wishlist, built with Django</p>
@@ -23,4 +25,5 @@
         <a class="nav-link" href="{% url 'about' %}">About this Wishlist</a>
     </div>
 
+    </body>
 </html>
