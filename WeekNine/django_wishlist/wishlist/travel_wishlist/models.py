@@ -22,6 +22,12 @@ class Place(models.Model):
         if default_storage.exists(photo.name):
             default_storage.delete(photo.name)
 
+    def delete(self, *args, **kwargs):
+        if self.photo:
+            self.delete_photo(self.photo)
+
+        super().delete(*args, **kwargs)
+
     def __str__(self):
         photo_str = self.photo.url if self.photo else 'no photo'
         return f'{self.name} visted? {self.visited} on {self.date_visited}. Photo {photo_str}'
